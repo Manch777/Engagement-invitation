@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="theme-color" content="#f7f1e8">
-    <meta name="description" content="Responsive digital engagement invitation with interactive animations, countdown timer, event details, and location map.">
-
+    <meta
+        name="description"
+        content="Responsive digital engagement invitation with interactive animations, countdown timer, event details, and location map."
+    >
     <meta name="author" content="Manch777">
 
     <title>Engagement Invitation | Interactive Event Website</title>
@@ -24,6 +26,7 @@
 
 <body class="sealed">
 
+    <!-- Envelope opening screen -->
     <div class="envelope-scene" id="envelopeScene">
 
         <div class="envelope-glow" aria-hidden="true"></div>
@@ -31,187 +34,291 @@
         <p class="envelope-kicker">Հրավեր</p>
 
         <div class="envelope-stage">
-        <div class="envelope" id="envelope">
+            <div class="envelope" id="envelope">
 
-            <div class="envelope-back" aria-hidden="true"></div>
+                <div class="envelope-back" aria-hidden="true"></div>
 
-            <button type="button" class="letter-card" id="letterCard" aria-label="Բացել հրավերը" tabindex="-1">
-                <span class="letter-frame"></span>
-                <span class="letter-ornament">✦</span>
-                <span class="letter-eyebrow">ՆՇԱՆԱԴՐՈՒԹՅՈՒՆ</span>
-                <span class="letter-names">
-                    Արման
-                    <i>&amp;</i>
-                    Դիանա
-                </span>
-                <span class="letter-date">10 · 09 · 2026</span>
-                <span class="letter-open-hint">բացել</span>
-            </button>
+                <button
+                    type="button"
+                    class="letter-card"
+                    id="letterCard"
+                    aria-label="Բացել հրավերը"
+                    tabindex="-1"
+                >
+                    <span class="letter-frame" aria-hidden="true"></span>
+                    <span class="letter-ornament" aria-hidden="true">✦</span>
 
-            <div class="envelope-front" aria-hidden="true">
-            </div>
+                    <span class="letter-eyebrow">
+                        ՆՇԱՆԱԴՐՈՒԹՅՈՒՆ
+                    </span>
 
-            <div class="envelope-lid" aria-hidden="true"></div>
+                    <span class="letter-names">
+                        Արման
+                        <i>&amp;</i>
+                        Դիանա
+                    </span>
 
-            <button type="button"
+                    <span class="letter-date">
+                        10 · 09 · 2026
+                    </span>
+
+                    <span class="letter-open-hint">
+                        բացել
+                    </span>
+                </button>
+
+                <div class="envelope-front" aria-hidden="true"></div>
+                <div class="envelope-lid" aria-hidden="true"></div>
+
+                <button
+                    type="button"
                     class="wax-seal"
                     id="waxSeal"
-                    aria-label="Բացել կնիքը">
+                    aria-label="Բացել կնիքը"
+                >
+                    <svg
+                        class="wax-seal-svg"
+                        viewBox="0 0 120 120"
+                        xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true"
+                    >
+                        <defs>
+                            <radialGradient
+                                id="waxGradient"
+                                cx="35%"
+                                cy="27%"
+                                r="78%"
+                            >
+                                <stop
+                                    offset="0%"
+                                    stop-color="#c05a50"
+                                />
+                                <stop
+                                    offset="48%"
+                                    stop-color="#9d403b"
+                                />
+                                <stop
+                                    offset="100%"
+                                    stop-color="#702725"
+                                />
+                            </radialGradient>
 
-                <svg class="wax-seal-svg"
-                     viewBox="0 0 120 120"
-                     xmlns="http://www.w3.org/2000/svg"
-                     aria-hidden="true">
-
-                    <defs>
-                        <radialGradient id="waxGradient"
-                                        cx="35%"
-                                        cy="27%"
-                                        r="78%">
-                            <stop offset="0%" stop-color="#c05a50" />
-                            <stop offset="48%" stop-color="#9d403b" />
-                            <stop offset="100%" stop-color="#702725" />
-                        </radialGradient>
-
-                        <filter id="waxShadow"
+                            <filter
+                                id="waxShadow"
                                 x="-30%"
                                 y="-30%"
                                 width="160%"
-                                height="170%">
-                            <feDropShadow dx="0"
-                                          dy="5"
-                                          stdDeviation="4"
-                                          flood-color="#55272a"
-                                          flood-opacity="0.32" />
-                        </filter>
-                    </defs>
+                                height="170%"
+                            >
+                                <feDropShadow
+                                    dx="0"
+                                    dy="5"
+                                    stdDeviation="4"
+                                    flood-color="#55272a"
+                                    flood-opacity="0.32"
+                                />
+                            </filter>
+                        </defs>
 
-                    <!-- Неровный сургуч -->
-                    <path d="
-            M60 7
-            C70 6 76 12 82 17
-            C92 15 99 21 100 30
-            C109 34 111 43 107 51
-            C113 59 111 68 104 74
-            C106 84 99 92 90 94
-            C86 104 77 108 68 105
-            C61 112 51 111 44 106
-            C34 109 26 104 23 95
-            C14 92 10 83 14 74
-            C7 68 7 58 12 51
-            C8 42 12 33 20 29
-            C22 20 31 16 40 17
-            C46 10 52 7 60 7
-            Z"
-                          fill="url(#waxGradient)"
-                          filter="url(#waxShadow)" />
+                        <!-- Irregular wax seal shape -->
+                        <path
+                            d="
+                                M60 7
+                                C70 6 76 12 82 17
+                                C92 15 99 21 100 30
+                                C109 34 111 43 107 51
+                                C113 59 111 68 104 74
+                                C106 84 99 92 90 94
+                                C86 104 77 108 68 105
+                                C61 112 51 111 44 106
+                                C34 109 26 104 23 95
+                                C14 92 10 83 14 74
+                                C7 68 7 58 12 51
+                                C8 42 12 33 20 29
+                                C22 20 31 16 40 17
+                                C46 10 52 7 60 7
+                                Z
+                            "
+                            fill="url(#waxGradient)"
+                            filter="url(#waxShadow)"
+                        />
 
-                    <!-- Вдавленный круг -->
-                    <circle cx="60"
+                        <!-- Embossed circles -->
+                        <circle
+                            cx="60"
                             cy="58"
                             r="37"
                             fill="none"
                             stroke="#d9a66e"
                             stroke-width="1.4"
-                            opacity=".9" />
+                            opacity=".9"
+                        />
 
-                    <circle cx="60"
+                        <circle
+                            cx="60"
                             cy="58"
                             r="33.5"
                             fill="none"
                             stroke="#e8c18b"
                             stroke-width=".55"
-                            opacity=".5" />
+                            opacity=".5"
+                        />
 
-                    <!-- Монограмма -->
-                    <text class="seal-a"
-                          x="49"
-                          y="68"
-                          text-anchor="middle">Ա</text>
+                        <!-- Monogram -->
+                        <text
+                            class="seal-a"
+                            x="49"
+                            y="68"
+                            text-anchor="middle"
+                        >
+                            Ա
+                        </text>
 
-                    <text class="seal-d"
-                          x="70"
-                          y="68"
-                          text-anchor="middle">Դ</text>
+                        <text
+                            class="seal-d"
+                            x="70"
+                            y="68"
+                            text-anchor="middle"
+                        >
+                            Դ
+                        </text>
+                    </svg>
+                </button>
 
-                </svg>
-
-            </button>
-
+            </div>
         </div>
-        </div>
 
-        <p class="envelope-hint" id="envelopeHint">Սեղմեք կնիքը</p>
+        <p class="envelope-hint" id="envelopeHint">
+            Սեղմեք կնիքը
+        </p>
 
     </div>
 
 
-    <!-- Декоративный фон -->
-    <div class="background-decoration decoration-one" aria-hidden="true"></div>
-    <div class="background-decoration decoration-two" aria-hidden="true"></div>
+    <!-- Decorative background -->
+    <div
+        class="background-decoration decoration-one"
+        aria-hidden="true"
+    ></div>
+
+    <div
+        class="background-decoration decoration-two"
+        aria-hidden="true"
+    ></div>
 
 
-    <!-- ПЕРВЫЙ ЭКРАН -->
+    <!-- Hero -->
     <section class="hero">
 
+        <div
+            class="botanical botanical-left"
+            aria-hidden="true"
+        >
+            <svg
+                viewBox="0 0 180 360"
+                xmlns="http://www.w3.org/2000/svg"
+            >
+                <path
+                    class="stem"
+                    d="
+                        M150 350
+                        C125 300 125 250 100 205
+                        C75 160 62 105 72 25
+                    "
+                />
 
-        <div class="botanical botanical-left" aria-hidden="true">
-            <svg viewBox="0 0 180 360" xmlns="http://www.w3.org/2000/svg">
-                <path class="stem"
-                      d="M150 350
-                 C125 300 125 250 100 205
-                 C75 160 62 105 72 25" />
+                <path
+                    class="leaf"
+                    d="
+                        M105 215
+                        C65 205 45 180 48 150
+                        C80 155 101 180 105 215Z
+                    "
+                />
 
-                <path class="leaf"
-                      d="M105 215
-                 C65 205 45 180 48 150
-                 C80 155 101 180 105 215Z" />
+                <path
+                    class="leaf"
+                    d="
+                        M91 180
+                        C118 155 130 125 121 100
+                        C92 115 80 145 91 180Z
+                    "
+                />
 
-                <path class="leaf"
-                      d="M91 180
-                 C118 155 130 125 121 100
-                 C92 115 80 145 91 180Z" />
+                <path
+                    class="leaf"
+                    d="
+                        M76 130
+                        C43 118 27 95 31 69
+                        C59 74 76 99 76 130Z
+                    "
+                />
 
-                <path class="leaf"
-                      d="M76 130
-                 C43 118 27 95 31 69
-                 C59 74 76 99 76 130Z" />
-
-                <path class="leaf"
-                      d="M72 93
-                 C96 73 106 48 99 28
-                 C76 38 65 65 72 93Z" />
+                <path
+                    class="leaf"
+                    d="
+                        M72 93
+                        C96 73 106 48 99 28
+                        C76 38 65 65 72 93Z
+                    "
+                />
 
                 <circle cx="72" cy="25" r="3" />
             </svg>
         </div>
 
-        <div class="botanical botanical-right" aria-hidden="true">
-            <svg viewBox="0 0 180 360" xmlns="http://www.w3.org/2000/svg">
-                <path class="stem"
-                      d="M150 350
-                 C125 300 125 250 100 205
-                 C75 160 62 105 72 25" />
+        <div
+            class="botanical botanical-right"
+            aria-hidden="true"
+        >
+            <svg
+                viewBox="0 0 180 360"
+                xmlns="http://www.w3.org/2000/svg"
+            >
+                <path
+                    class="stem"
+                    d="
+                        M150 350
+                        C125 300 125 250 100 205
+                        C75 160 62 105 72 25
+                    "
+                />
 
-                <path class="leaf"
-                      d="M105 215
-                 C65 205 45 180 48 150
-                 C80 155 101 180 105 215Z" />
+                <path
+                    class="leaf"
+                    d="
+                        M105 215
+                        C65 205 45 180 48 150
+                        C80 155 101 180 105 215Z
+                    "
+                />
 
-                <path class="leaf"
-                      d="M91 180
-                 C118 155 130 125 121 100
-                 C92 115 80 145 91 180Z" />
+                <path
+                    class="leaf"
+                    d="
+                        M91 180
+                        C118 155 130 125 121 100
+                        C92 115 80 145 91 180Z
+                    "
+                />
 
-                <path class="leaf"
-                      d="M76 130
-                 C43 118 27 95 31 69
-                 C59 74 76 99 76 130Z" />
+                <path
+                    class="leaf"
+                    d="
+                        M76 130
+                        C43 118 27 95 31 69
+                        C59 74 76 99 76 130Z
+                    "
+                />
 
-                <path class="leaf"
-                      d="M72 93
-                 C96 73 106 48 99 28
-                 C76 38 65 65 72 93Z" />
+                <path
+                    class="leaf"
+                    d="
+                        M72 93
+                        C96 73 106 48 99 28
+                        C76 38 65 65 72 93Z
+                    "
+                />
 
                 <circle cx="72" cy="25" r="3" />
             </svg>
@@ -223,15 +330,20 @@
                 ՆՇԱՆԱԴՐՈՒԹՅՈՒՆ
             </p>
 
-            <div class="ornament" aria-hidden="true">✦</div>
+            <div class="ornament" aria-hidden="true">
+                ✦
+            </div>
 
             <h1>
                 <span>Արման</span>
-                <span class="ampersand">&</span>
+                <span class="ampersand">&amp;</span>
                 <span>Դիանա</span>
             </h1>
 
-            <div class="divider"></div>
+            <div
+                class="divider"
+                aria-hidden="true"
+            ></div>
 
             <p class="hero-date">
                 10 · 09 · 2026
@@ -239,23 +351,34 @@
 
         </div>
 
-        <a href="#invitation" class="scroll-down" aria-label="Հաջորդ էջ">
-            <span></span>
+        <a
+            href="#invitation"
+            class="scroll-down"
+            aria-label="Հաջորդ էջ"
+        >
+            <span aria-hidden="true"></span>
         </a>
 
     </section>
 
 
-    <!-- ПРИГЛАШЕНИЕ -->
-    <section class="section invitation" id="invitation">
-
+    <!-- Invitation -->
+    <section
+        class="section invitation"
+        id="invitation"
+    >
         <div class="content reveal">
 
             <p class="section-small">
                 ՍԻՐԵԼԻ՛ ՀԱՐԱԶԱՏՆԵՐ ԵՎ ԸՆԿԵՐՆԵՐ
             </p>
 
-            <div class="tiny-ornament" aria-hidden="true">❦</div>
+            <div
+                class="tiny-ornament"
+                aria-hidden="true"
+            >
+                ❦
+            </div>
 
             <p class="invitation-text">
                 Սիրով հրավիրում ենք Ձեզ ներկա գտնվելու
@@ -270,19 +393,22 @@
 
         </div>
 
-        <a href="#date" class="scroll-down" aria-label="Հաջորդ էջ">
-            <span></span>
+        <a
+            href="#date"
+            class="scroll-down"
+            aria-label="Հաջորդ էջ"
+        >
+            <span aria-hidden="true"></span>
         </a>
 
     </section>
 
 
-    <!-- ДАТА -->
-
-
-
-    <section class="section date-section" id="date">
-
+    <!-- Date -->
+    <section
+        class="section date-section"
+        id="date"
+    >
         <div class="content reveal">
 
             <p class="section-small">
@@ -290,8 +416,6 @@
             </p>
 
             <div class="date-card">
-
-
 
                 <div class="wedding-calendar">
 
@@ -325,24 +449,31 @@
                         <span>8</span>
                         <span>9</span>
 
-                        <span class="wedding-day" aria-label="10 սեպտեմբերի, նշանադրության օր">
+                        <span
+                            class="wedding-day"
+                            aria-label="10 սեպտեմբերի, նշանադրության օր"
+                        >
+                            <svg
+                                class="heart"
+                                viewBox="0 0 100 100"
+                                aria-hidden="true"
+                            >
+                                <path
+                                    d="
+                                        M50 94
 
-                            <svg class="heart" viewBox="0 0 100 100" aria-hidden="true">
-                                <path d="
-                                    M50 94
+                                        C44 88, 10 60, 10 32
+                                        C10 13, 21 4, 36 4
+                                        C45 4, 49 12, 50 25
 
-                                    C44 88, 10 60, 10 32
-                                    C10 13, 21 4, 36 4
-                                    C45 4, 49 12, 50 25
-
-                                    C51 12, 55 4, 64 4
-                                    C79 4, 90 13, 90 32
-                                    C90 60, 56 88, 50 94
-                                " />
+                                        C51 12, 55 4, 64 4
+                                        C79 4, 90 13, 90 32
+                                        C90 60, 56 88, 50 94
+                                    "
+                                />
                             </svg>
 
                             <b>10</b>
-
                         </span>
 
                         <span>11</span>
@@ -377,50 +508,69 @@
 
                 </div>
 
-
             </div>
 
         </div>
 
-        <a href="#countdown" class="scroll-down" aria-label="Հաջորդ էջ">
-            <span></span>
+        <a
+            href="#countdown"
+            class="scroll-down"
+            aria-label="Հաջորդ էջ"
+        >
+            <span aria-hidden="true"></span>
         </a>
 
     </section>
 
-    <!-- ОБРАТНЫЙ ОТСЧЁТ -->
-    <section class="section countdown-section" id="countdown">
 
+    <!-- Countdown -->
+    <section
+        class="section countdown-section"
+        id="countdown"
+    >
         <div class="content reveal">
 
             <p class="section-small">
                 ՄԻՆՉ ՄԵՐ ՀԱՆԴԻՊՈՒՄԸ
             </p>
 
-
-
-            <div class="countdown" aria-live="polite">
+            <div class="countdown">
 
                 <div class="countdown-item">
                     <span id="days">00</span>
                     <small>ՕՐ</small>
                 </div>
 
-                <div class="countdown-separator">·</div>
+                <div
+                    class="countdown-separator"
+                    aria-hidden="true"
+                >
+                    ·
+                </div>
 
                 <div class="countdown-item">
                     <span id="hours">00</span>
                     <small>ԺԱՄ</small>
                 </div>
 
-                <div class="countdown-separator">·</div>
+                <div
+                    class="countdown-separator"
+                    aria-hidden="true"
+                >
+                    ·
+                </div>
 
                 <div class="countdown-item">
                     <span id="minutes">00</span>
                     <small>ՐՈՊԵ</small>
                 </div>
 
-                <div class="countdown-separator">·</div>
+                <div
+                    class="countdown-separator"
+                    aria-hidden="true"
+                >
+                    ·
+                </div>
 
                 <div class="countdown-item">
                     <span id="seconds">00</span>
@@ -431,22 +581,34 @@
 
         </div>
 
-        <a href="#location" class="scroll-down" aria-label="Հաջորդ էջ">
-            <span></span>
+        <a
+            href="#location"
+            class="scroll-down"
+            aria-label="Հաջորդ էջ"
+        >
+            <span aria-hidden="true"></span>
         </a>
 
     </section>
 
-    <!-- ЛОКАЦИЯ -->
-    <section class="section location-section" id="location">
 
+    <!-- Location -->
+    <section
+        class="section location-section"
+        id="location"
+    >
         <div class="content reveal">
 
             <p class="section-small">
                 ՎԱՅՐԸ
             </p>
 
-            <div class="tiny-ornament" aria-hidden="true">❦</div>
+            <div
+                class="tiny-ornament"
+                aria-hidden="true"
+            >
+                ❦
+            </div>
 
             <h2>
                 Palais Wedding Hall
@@ -461,41 +623,55 @@
             </p>
 
             <div class="map-container">
-
-                <iframe src="https://yandex.com/map-widget/v1/?ol=biz&oid=202867135433&z=17"
-                        loading="lazy"
-                        allowfullscreen
-                        title="Palais Wedding Hall, Հրազդան">
-                </iframe>
-
+                <iframe
+                    src="https://yandex.com/map-widget/v1/?ol=biz&oid=202867135433&z=17"
+                    loading="lazy"
+                    allowfullscreen
+                    title="Palais Wedding Hall, Հրազդան"
+                ></iframe>
             </div>
 
-            <a href="https://yandex.com/maps/org/palais_wedding_hall/202867135433/"
-               target="_blank"
-               rel="noopener noreferrer"
-               class="map-button">
+            <a
+                href="https://yandex.com/maps/org/palais_wedding_hall/202867135433/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="map-button"
+            >
                 Երթուղի
-                <span>→</span>
+                <span aria-hidden="true">→</span>
             </a>
 
         </div>
 
-        <a href="#final" class="scroll-down" aria-label="Հաջորդ էջ">
-            <span></span>
+        <a
+            href="#final"
+            class="scroll-down"
+            aria-label="Հաջորդ էջ"
+        >
+            <span aria-hidden="true"></span>
         </a>
-
 
     </section>
 
 
-    <!-- ФИНАЛ -->
-    <section class="final-section" id="final">
-
-        <div class="final-frame" aria-hidden="true"></div>
+    <!-- Final section -->
+    <section
+        class="final-section"
+        id="final"
+    >
+        <div
+            class="final-frame"
+            aria-hidden="true"
+        ></div>
 
         <div class="content reveal">
 
-            <div class="final-ornament" aria-hidden="true">❦</div>
+            <div
+                class="final-ornament"
+                aria-hidden="true"
+            >
+                ❦
+            </div>
 
             <p class="final-text">
                 Սիրով սպասում ենք Ձեզ
@@ -503,7 +679,7 @@
 
             <h2 class="final-names">
                 Արման
-                <span>&</span>
+                <span>&amp;</span>
                 Դիանա
             </h2>
 
@@ -514,7 +690,6 @@
         </div>
 
     </section>
-
 
     <script src="script.js" defer></script>
 
