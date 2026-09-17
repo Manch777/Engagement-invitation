@@ -1,5 +1,5 @@
 /* ==============================
-   Envelope interaction
+   ENVELOPE INTERACTION
 ================================ */
 
 const envelopeScene = document.getElementById("envelopeScene");
@@ -11,6 +11,11 @@ const envelopeHint = document.getElementById("envelopeHint");
 const prefersReducedMotion = window.matchMedia(
     "(prefers-reduced-motion: reduce)"
 ).matches;
+
+
+/* ==============================
+   INVITATION REVEAL
+================================ */
 
 function revealInvitation() {
     if (!envelopeScene || envelopeScene.classList.contains("leaving")) {
@@ -32,6 +37,11 @@ function revealInvitation() {
         envelopeScene.remove();
     }, prefersReducedMotion ? 0 : 900);
 }
+
+
+/* ==============================
+   ENVELOPE OPENING
+================================ */
 
 function openEnvelope() {
     if (
@@ -78,7 +88,7 @@ if (waxSeal && letterCard && envelope) {
 
 
 /* ==============================
-   Reveal animations
+   SCROLL REVEAL ANIMATIONS
 ================================ */
 
 const revealElements = document.querySelectorAll(".reveal");
@@ -109,7 +119,7 @@ if (prefersReducedMotion) {
 
 
 /* ==============================
-   Countdown
+   COUNTDOWN
 ================================ */
 
 const weddingDate = new Date("2026-09-10T17:00:00+04:00");
@@ -122,7 +132,12 @@ const secondsElement = document.getElementById("seconds");
 let countdownInterval = null;
 
 function setCountdown(days, hours, minutes, seconds) {
-    if (!daysElement || !hoursElement || !minutesElement || !secondsElement) {
+    if (
+        !daysElement ||
+        !hoursElement ||
+        !minutesElement ||
+        !secondsElement
+    ) {
         return;
     }
 
@@ -160,8 +175,16 @@ function updateCountdown() {
     setCountdown(days, hours, minutes, seconds);
 }
 
+
+/* ==============================
+   COUNTDOWN INITIALIZATION
+================================ */
+
 updateCountdown();
 
 if (weddingDate.getTime() > Date.now()) {
-    countdownInterval = window.setInterval(updateCountdown, 1000);
+    countdownInterval = window.setInterval(
+        updateCountdown,
+        1000
+    );
 }
