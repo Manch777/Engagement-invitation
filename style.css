@@ -20,7 +20,7 @@ body {
     margin: 0;
     color: var(--brown);
     background: var(--cream);
-    font-family: "Noto Sans Armenian", sans-serif;
+    font-family: "Montserrat", sans-serif;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
 }
@@ -96,14 +96,14 @@ body {
 }
 
 .hero::before {
-    content: "Ա";
+    content: "A";
     position: absolute;
     left: 33%;
     top: 40%;
     z-index: 0;
     transform: translate(-50%, -50%);
     pointer-events: none;
-    font-family: "Noto Serif Armenian", serif;
+    font-family: "Cormorant Garamond", serif;
     font-size: clamp(430px, 47vw, 680px);
     font-weight: 300;
     line-height: 1;
@@ -111,14 +111,14 @@ body {
 }
 
 .hero::after {
-    content: "Դ";
+    content: "D";
     position: absolute;
     left: 68%;
     top: 61%;
     z-index: 0;
     transform: translate(-50%, -50%);
     pointer-events: none;
-    font-family: "Noto Serif Armenian", serif;
+    font-family: "Cormorant Garamond", serif;
     font-size: clamp(430px, 47vw, 680px);
     font-weight: 300;
     line-height: 1;
@@ -145,7 +145,7 @@ body {
 }
 
 h1 {
-    font-family: "Noto Serif Armenian", serif;
+    font-family: "Cormorant Garamond", serif;
     font-size: clamp(55px, 12vw, 115px);
     font-weight: 300;
     line-height: 1.05;
@@ -257,7 +257,7 @@ h1 .ampersand {
 .invitation-text {
     max-width: 700px;
     margin: auto;
-    font-family: "Noto Serif Armenian", serif;
+    font-family: "Cormorant Garamond", serif;
     font-size: clamp(22px, 4vw, 35px);
     font-weight: 300;
     line-height: 1.8;
@@ -329,7 +329,7 @@ h1 .ampersand {
     grid-template-columns: repeat(7, 1fr);
     margin-top: 25px;
     margin-bottom: 12px;
-    font-family: "Noto Sans Armenian", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 9px;
     color: var(--soft-brown);
     text-align: center;
@@ -426,7 +426,7 @@ h1 .ampersand {
 }
 
 .countdown-item > span {
-    font-family: "Noto Serif Armenian", serif;
+    font-family: "Cormorant Garamond", serif;
     font-size: clamp(42px, 5vw, 72px);
     font-weight: 300;
     line-height: 1;
@@ -435,7 +435,7 @@ h1 .ampersand {
 
 .countdown-item small {
     margin-top: 18px;
-    font-family: "Noto Sans Armenian", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 9px;
     font-weight: 300;
     letter-spacing: 0.25em;
@@ -494,7 +494,7 @@ h1 .ampersand {
 
 .location-note {
     margin-top: clamp(5px, 1vh, 10px);
-    font-family: "Noto Sans Armenian", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 11px;
     letter-spacing: 2px;
     color: var(--soft-brown);
@@ -529,7 +529,7 @@ h1 .ampersand {
     border: 1px solid rgba(173, 146, 116, 0.65);
     background: transparent;
     color: var(--brown);
-    font-family: "Noto Sans Armenian", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 11px;
     letter-spacing: 1.5px;
     text-decoration: none;
@@ -595,12 +595,12 @@ h1 .ampersand {
 
 .final-text {
     margin-bottom: 50px;
-    font-family: "Noto Serif Armenian", serif;
+    font-family: "Cormorant Garamond", serif;
     font-size: clamp(20px, 4vw, 30px);
 }
 
 .final-names {
-    font-family: "Noto Serif Armenian", serif;
+    font-family: "Cormorant Garamond", serif;
     font-size: clamp(50px, 10vw, 90px);
     font-weight: 300;
     line-height: 1.3;
@@ -916,7 +916,7 @@ body.sealed {
 }
 
 .letter-eyebrow {
-    font-family: "Noto Sans Armenian", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 9px;
     letter-spacing: 0.42em;
     color: var(--soft-brown);
@@ -927,7 +927,7 @@ body.sealed {
     flex-direction: column;
     align-items: center;
     gap: 4px;
-    font-family: "Noto Serif Armenian", serif;
+    font-family: "Cormorant Garamond", serif;
     font-size: clamp(28px, 7vw, 38px);
     font-weight: 300;
     line-height: 1.15;
@@ -1070,7 +1070,7 @@ body.sealed {
 
 .seal-a,
 .seal-d {
-    font-family: "Noto Serif Armenian", Georgia, serif;
+    font-family: "Cormorant Garamond", Georgia, serif;
     font-size: 34px;
     font-weight: 400;
     fill: #f0c98f;
