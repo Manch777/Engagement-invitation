@@ -71,7 +71,7 @@ function openEnvelope() {
         letterCard.focus({ preventScroll: true });
 
         if (envelopeHint) {
-            envelopeHint.textContent = "Սեղմեք բացիկը";
+            envelopeHint.textContent = "Tap the invitation";
         }
     }, cardDelay);
 }
