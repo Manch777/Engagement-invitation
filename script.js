@@ -122,7 +122,7 @@ if (prefersReducedMotion) {
    COUNTDOWN
 ================================ */
 
-const weddingDate = new Date("2026-09-10T17:00:00+04:00");
+const weddingDate = new Date("2027-09-10T17:00:00+04:00");
 
 const daysElement = document.getElementById("days");
 const hoursElement = document.getElementById("hours");
